@@ -1,0 +1,49 @@
+﻿@page "/game"
+@inject BlazorTesting.Models.Game Engine
+
+<h1>2048</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div onclick="@Engine.MoveUp" class="col-6 btn btn-primary"> UP </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row top-buffer bottom-buffer">
+        <div class="col-2"></div>
+        <div onclick="@Engine.MoveLeft" class="col-1 btn btn-primary d-flex align-items-center"><div class="rotate-270 w-100">LEFT</div> </div>
+        <div class="col-6">
+            @for (int i = 0; i < Engine.GameField.GetLength(0); i++)
+            {
+                <div class="row">
+                    @for (int j = 0; j < Engine.GameField.GetLength(1); j++)
+                    {
+                        <div class="col-3 ">
+                            @{fieldName = "Field " + i + "," + j; }
+                            @if (Engine.GameField[i, j] != 0)
+                            {
+                                displayedValue = Engine.GameField[i, j].ToString();
+                            }
+                            else
+                            {
+                                displayedValue = " ";
+                            }
+                            <div class="outer-tile"><div class="inner-tile">@displayedValue</div></div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+        <div onclick="@Engine.MoveRight" class="col-1 btn btn-primary d-flex align-items-center"><div class="rotate-90 w-100">RIGHT</div> </div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-3"></div>
+        <div onclick="@Engine.MoveDown" class="col-6 btn btn-primary">DOWN</div>
+        <div class="col-3"></div>
+    </div>
+</div>
+
+@functions {
+    string displayedValue = "";
+    string fieldName;
+}
