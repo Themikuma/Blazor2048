@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\georgi.dimitrov\\source\\repos\\BlazorTesting\\BlazorTesting\\BlazorTesting.csproj": {}
+    "C:\\Users\\georgi.dimitrov\\source\\repos\\Blazor2048\\BlazorTesting\\BlazorTesting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\georgi.dimitrov\\source\\repos\\BlazorTesting\\BlazorTesting\\BlazorTesting.csproj": {
+    "C:\\Users\\georgi.dimitrov\\source\\repos\\Blazor2048\\BlazorTesting\\BlazorTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\georgi.dimitrov\\source\\repos\\BlazorTesting\\BlazorTesting\\BlazorTesting.csproj",
+        "projectUniqueName": "C:\\Users\\georgi.dimitrov\\source\\repos\\Blazor2048\\BlazorTesting\\BlazorTesting.csproj",
         "projectName": "BlazorTesting",
-        "projectPath": "C:\\Users\\georgi.dimitrov\\source\\repos\\BlazorTesting\\BlazorTesting\\BlazorTesting.csproj",
+        "projectPath": "C:\\Users\\georgi.dimitrov\\source\\repos\\Blazor2048\\BlazorTesting\\BlazorTesting.csproj",
         "packagesPath": "C:\\Users\\georgi.dimitrov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\georgi.dimitrov\\source\\repos\\BlazorTesting\\BlazorTesting\\obj\\",
+        "outputPath": "C:\\Users\\georgi.dimitrov\\source\\repos\\Blazor2048\\BlazorTesting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -27,8 +27,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+          "https://dotnet.myget.org/F/blazor-dev/api/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -46,12 +45,17 @@
           "dependencies": {
             "Microsoft.AspNetCore.Blazor": {
               "target": "Package",
-              "version": "[0.8.0-preview-19104-04, )"
+              "version": "[3.0.0-preview5-19227-01, )"
             },
             "Microsoft.AspNetCore.Blazor.Build": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[0.8.0-preview-19104-04, )"
+              "version": "[3.0.0-preview5-19227-01, )"
+            },
+            "Microsoft.AspNetCore.Blazor.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0-preview5-19227-01, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
