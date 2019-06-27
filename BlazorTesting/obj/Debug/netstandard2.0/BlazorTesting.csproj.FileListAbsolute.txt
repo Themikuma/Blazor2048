@@ -80,3 +80,7 @@ C:\Users\georgi.dimitrov\source\repos\BlazorTesting\BlazorTesting\obj\Debug\nets
 C:\Users\georgi.dimitrov\source\repos\BlazorTesting\BlazorTesting\obj\Debug\netstandard2.0\BlazorTesting.csprojAssemblyReference.cache
 C:\Users\georgi.dimitrov\source\repos\BlazorTesting\BlazorTesting\obj\Debug\netstandard2.0\RazorDeclaration\Pages\Game.cshtml.g.cs
 C:\Users\georgi.dimitrov\source\repos\BlazorTesting\BlazorTesting\obj\Debug\netstandard2.0\Razor\Pages\Game.cshtml.g.cs
+C:\Users\georgi.dimitrov\source\repos\Blazor2048\BlazorTesting\obj\Debug\netstandard2.0\BlazorTesting.csprojAssemblyReference.cache
+C:\Users\georgi.dimitrov\source\repos\Blazor2048\BlazorTesting\obj\Debug\netstandard2.0\BlazorTesting.csproj.CoreCompileInputs.cache
+C:\Users\georgi.dimitrov\source\repos\Blazor2048\BlazorTesting\obj\Debug\netstandard2.0\BlazorTesting.AssemblyInfoInputs.cache
+C:\Users\georgi.dimitrov\source\repos\Blazor2048\BlazorTesting\obj\Debug\netstandard2.0\BlazorTesting.AssemblyInfo.cs
