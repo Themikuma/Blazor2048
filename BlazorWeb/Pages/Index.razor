@@ -17,18 +17,7 @@
                 <div class="row">
                     @for (int j = 0; j < Engine.GameField.GetLength(1); j++)
                     {
-                        <div class="col-3 ">
-                            @{fieldName = "Field " + i + "," + j; }
-                            @if (Engine.GameField[i, j] != 0)
-                            {
-                                displayedValue = Engine.GameField[i, j].ToString();
-                            }
-                            else
-                            {
-                                displayedValue = " ";
-                            }
-                            <div class="outer-tile"><div class="inner-tile">@displayedValue</div></div>
-                        </div>
+                        <CellComponent Value="Engine.GameField[i,j]"></CellComponent>
                     }
                 </div>
             }

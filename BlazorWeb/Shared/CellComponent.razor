@@ -1,0 +1,18 @@
+﻿
+<div class="col-3 ">
+    @if (Value != 0)
+    {
+        displayedValue = Value.ToString();
+    }
+    else
+    {
+        displayedValue = " ";
+    }
+    <div class="outer-tile"><div class="inner-tile">@displayedValue</div></div>
+</div>
+
+@functions {
+    // Demonstrates how a parent component can supply parameters
+    [Parameter] int Value { get; set; }
+    string displayedValue;
+}

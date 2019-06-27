@@ -4,25 +4,17 @@
 <input type="text" id="textField" bind="@message" />
 <button onclick="@ShowAlert">Show Alert</button>
 
-<div class="row"></div>
+@*<div class="row"></div>
 <div class="row">
     <div class="col-3"><input type="text" bind="@model.Label"/></div>
     <div class="col-3"><input type="number" bind="@model.Count"/></div>
     <div class="col-2"><button onclick="@IncrementCounter">Increment</button></div>
-</div>
+</div>*@
 @functions {
 
-    string message = "";
-    ComplexClass model = new ComplexClass() { Count = 3, Label = "3" };
-
-    private void IncrementCounter()
-    {
-        model.Count += 2;
-        model.Label += "+2";
-    }
-
+    string message;
     private async Task ShowAlert()
     {
-        await jsRuntime.InvokeAsync<object>("interopThis", message);
+        await jsRuntime.InvokeAsync<object>("ShowAlert", message);
     }
 }
